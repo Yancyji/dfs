@@ -1,0 +1,21 @@
+server:
+  port: 3000
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB # 最大支持文件大小
+      max-request-size: 100MB # 最大支持请求大小
+   # 分布式文件系统FDFS配置
+fdfs:
+     # 链接超时
+  connect-timeout: 600
+     # 读取时间
+  so-timeout: 600
+     # 生成缩略图参数
+  thumb-image:
+    width: 150
+    height: 150
+  tracker-list: 192.168.217.128:22122
+lee:
+  path: group1/M00/00/00/
+  save: D:\img\
